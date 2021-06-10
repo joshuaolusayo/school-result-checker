@@ -1,0 +1,19 @@
+$pry-color: #007dbc;
+$dark-color: #112E3F;
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: #e5e5e5;
+}
+
+.bg-pry {
+	background: $pry-color;
+}
+
+.text-pry {
+	color: $pry-color;
+}
+
+.bg-dark-col {
+    background: $dark-color;
+}

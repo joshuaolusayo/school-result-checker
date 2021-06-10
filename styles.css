@@ -1,0 +1,16 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: #e5e5e5;
+}
+
+.bg-pry {
+  background: #007dbc;
+}
+
+.text-pry {
+  color: #007dbc;
+}
+
+.bg-dark-col {
+  background: #112E3F;
+}

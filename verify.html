@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Verify Matric Number</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="md:grid md:grid-cols-3 h-screen">
+            <div class="md:col-span-1 bg-pry hidden md:block"></div>
+            <div class="md:col-span-2 md:grid md:grid-cols-7 md:justify-center md:items-center overflow-scroll">
+                <div class="md:bg-transparent md:col-start-2 lg:col-start-3 md:col-span-5 lg:col-span-3 mt-10 md:mt-0">
+                    <p class="font-bold text-2xl px-4 md:px-0">Verify Matric Number</p>
+                    <form action="./verfiy.html" class="md:bg-white p-4 rounded-lg shadow mt-4">
+                        <p>A verification code was sent to your email, please check and .</p>
+                        <div class="w-full mt-6 grid gap-4 grid-cols-6">
+                            <input type="number" class="p-3 bg-gray-100 rounded-lg shadow" min="0" max="9">
+                            <input type="number" class="p-3 bg-gray-100 rounded-lg shadow" min="0" max="9">
+                            <input type="number" class="p-3 bg-gray-100 rounded-lg shadow" min="0" max="9">
+                            <input type="number" class="p-3 bg-gray-100 rounded-lg shadow" min="0" max="9">
+                            <input type="number" class="p-3 bg-gray-100 rounded-lg shadow" min="0" max="9">
+                            <input type="number" class="p-3 bg-gray-100 rounded-lg shadow" min="0" max="9">
+                        </div>
+
+                        <button type="submit"
+                            class="bg-dark-col p-3 text-white text-center w-full rounded-lg mt-20">Verify</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
