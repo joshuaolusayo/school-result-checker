@@ -1,6 +1,6 @@
 body {
-  font-family: 'Ubuntu', sans-serif;
-  background: #e5e5e5;
+  font-family: "Ubuntu", sans-serif;
+  background: #fefffe;
 }
 
 .bg-pry {
@@ -12,5 +12,58 @@ body {
 }
 
 .bg-dark-col {
-  background: #112E3F;
+  background: #112e3f;
+}
+
+.bg-light-blue {
+  background: #f3faff;
+}
+
+.bg-dblue {
+  background: #dbf2ff;
+}
+
+.bg-dblue-500 {
+  background: rgba(219, 242, 255, 0.6);
+}
+
+.text-blue {
+  color: #0075ff;
+}
+
+.text-orange {
+  color: #ff8a00;
+}
+
+.text-purple {
+  color: #ff00f5;
+}
+
+a {
+  transition: all 500ms ease;
+}
+
+.see-more {
+  color: #ff8a00;
+  background: #fff;
+}
+
+.see-more:hover {
+  color: #fff;
+  background: #ff8a00;
+}
+
+.bg {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.result-table, th, td {
+  border: 1px solid #e6e6e6;
+  border-collapse: collapse;
+}
+
+.result-table th,
+.result-table td {
+  padding: 10px;
 }

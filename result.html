@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./style.css">
-    <title>Homepage</title>
+    <title>Result</title>
+
+
 </head>
 
 <body>
@@ -113,37 +115,136 @@
                         </div>
                         <a class="text-blue font-bold hover:underline text-sm" href="#">Take a look >></a>
                     </div>
-                    <img class="col-span-1 h-44 -mt-12 object-cover hidden sm:inline-block" src="./assets/icon.png" alt="Icon">
+                    <img class="col-span-1 h-44 -mt-12 object-cover hidden sm:inline-block" src="./assets/icon.png"
+                        alt="Icon">
                 </div>
 
-                <div class="flex justify-between items-center mb-4 lg:my-6">
-                    <h3 class="text-3xl font-bold">Home</h3>
-                    <span class="text-red-600 text-sm hidden lg:inline-block">Log out</span>
-                    <img class="w-12 h-12 lg:hidden rounded-full" src="/assets/profile.png" alt="User Profile">
-                </div>
+                <div class="h-screen md:h-full w-full flex justify-between md:block">
+                    <div>
+                        <div class="flex justify-between items-center mb-4 lg:my-6">
+                            <h3 class="text-3xl font-bold">Check Result</h3>
+                            <a href="/" class="text-gray-500 text-sm hidden lg:inline-block">Go home</a>
+                            <img class="w-12 h-12 lg:hidden rounded-full" src="/assets/profile.png" alt="User Profile">
+                        </div>
 
-                <div class="bg" style="background: url('/assets/check-result.png')">
-                    <div class="pt-24 pb-4 lg:pb-10 px-4 lg:px-10 bg-dblue-500 flex flex-col justify-end rounded-3xl top-0 left-0 w-100 h-100">
-                        <h3 class="font-bold text-2xl mb-4">Check Result</h3>
-                        <a class="text-blue font-bold hover:underline text-sm" href="#">Take a look >></a>
-                    </div>
-                </div>
+                        <div class="div w-full overflow-scroll">
+                            <table class="w-full text-gray-800 result-table text-xs md:text-base">
+                                <thead>
+                                    <tr class="border-b border-gray-500">
+                                        <th class="font-normal text-left">S/N</th>
+                                        <th class="font-normal text-left">Code</th>
+                                        <th class="font-normal text-left">Title</th>
+                                        <th class="font-normal text-left">Unit</th>
+                                        <th class="font-normal text-left">Status</th>
+                                        <th class="font-normal text-left">CA</th>
+                                        <th class="font-normal text-left">Exam</th>
+                                        <th class="font-normal text-left">Total</th>
+                                        <th class="font-normal text-left">Grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>ABE501</td>
+                                        <td>ENGINEERING MANAGEMENT</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CPE451</td>
+                                        <td>COMMUNICATION PRINCIPLES</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CPE531</td>
+                                        <td>COMMUNICATION PRINCIPLES</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CPE531</td>
+                                        <td>COMMUNICATION PRINCIPLES</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CPE531</td>
+                                        <td>COMMUNICATION PRINCIPLES</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CPE531</td>
+                                        <td>COMMUNICATION PRINCIPLES</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                <div class="md:grid md:grid-cols-2 gap-6 lg:mt-10">
-                    <div class="payment-history h-44 pb-4 px-4 lg:p-10 flex flex-col justify-end rounded-xl bg mt-4 lg:mt-0"
-                        style="background: url('/assets/payment-history.png')">
-                        <h3 class="font-bold text-2xl mb-4">Payment History</h3>
-                        <a class="text-orange font-bold hover:underline text-sm" href="#">View all payment info >></a>
+                        <div
+                            class="hidden my-8 p-3 lg:p-6 bg-dblue w-3/5 lg:w-4/5 xl:w-1/2 md:flex justify-between rounded-3xl items-center">
+                            <div>
+                                <img class="w-full h-auto" src="/assets/scan.png" alt="Scan to download result" />
+                            </div>
+                            <div class="flex flex-col items-start ml-2">
+                                <span>Scan this code to download the result</span>
+                                <button
+                                    class="block py-2 px-4 mt-3 text-center rounded-lg bg-dark-col border border-black text-white hover:text-black hover:bg-white">
+                                    Download PDF
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="md:hidden w-full">
+                            <button
+                                class="block py-2 w-full px-4 text-center rounded-lg bg-dark-col border border-black text-white hover:text-black hover:bg-white">
+                                Download PDF
+                            </button>
+                            <button
+                                class="block py-2 w-full px-4 text-center rounded-lg bg-white border border-black text-black hover:text-white hover:bg-black mt-3">
+                                Print
+                            </button>
+                        </div>
                     </div>
-                    <div class="my-profile h-44 pb-4 px-4 lg:p-10 flex flex-col justify-end rounded-xl bg mt-4 lg:mt-0"
-                        style="background: url('/assets/my-profile.png')">
-                        <h3 class="font-bold text-2xl mb-4">My Profile</h3>
-                        <a class="text-purple font-bold hover:underline text-sm" href="#">Take a look >></a>
-                    </div>
+
+
                 </div>
             </div>
 
-            <div class="hidden lg:block col-span-1 px-4 md:px-8 lg:px-3 xl:px-8 py-14 border-l-2 border-gray-300 h-screen overflow-scroll">
+            <div
+                class="hidden lg:block col-span-1 px-4 md:px-8 lg:px-3 xl:px-8 py-14 border-l-2 border-gray-300 h-screen overflow-scroll">
                 <div class="flex flex-col justify-center items-center border-b-2 border-gray-300 pb-4">
                     <img class="w-24 h-24 rounded-full" src="/assets/profile.png" alt="Profile Image">
                     <h3 class="my-3 text-xl">Ozenua Oluwatobi</h3>
